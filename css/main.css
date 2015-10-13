@@ -275,3 +275,10 @@
     color: #000;
 }
 /* ----------- /header__menu ----------- */
+
+/* ---------- promo-section ------------ */
+.promo-section{
+    height: 597px;
+    background-color: #606071;
+}
+/* ---------- /promo-section ----------- */
