@@ -360,9 +360,15 @@
     background-color: #ededed;
     box-shadow: 1px 1px 1px #777 inset;
     opacity: 1;
+    transition: box-shadow .4s ease;
+    -webkit-transition: box-shadow .4s ease;
+}
+.promo-pagination .swiper-pagination-bullet:hover{
+    box-shadow: 0 0 2px #777 inset;
 }
 .promo-pagination .swiper-pagination-bullet-active{
     background-color: #000;
+    cursor: default;
 }
 .promo-prev,
 .promo-next{
@@ -375,6 +381,8 @@
     border: 1px solid rgba(119,115,118,.5);
     border-radius: 5px;
     background: url("../img/ico-promo-arrows.png") no-repeat 9px 50% rgba(209,209,209,.5);
+    transition: background-color .3s ease;
+    -webkit-transition: background-color .3s ease;
 }
 .promo-prev{
     margin-left: -580px;
@@ -383,6 +391,10 @@
     right: auto;
     margin-left: 522px;
     background-position: -46px 50%;
+}
+.promo-prev:hover,
+.promo-next:hover{
+    background-color: rgba(209,209,209,.8);
 }
 /* ---------- /promo-section ----------- */
 
@@ -411,6 +423,38 @@
     color: #808080;
 }
 /* ------- /site__header-layout ------- */
+
+/* --------------- employment -------------- */
+.employment{
+    width: 976px;
+    margin: 0 auto;
+    padding: 61px 0 62px;
+    text-align: center;
+}
+.employment h2{
+    margin-bottom: 17px;
+    font: normal 32px/38px 'Myriad Pro Light', serif;
+}
+.employment__about{
+    width: 620px;
+    margin: 0 auto 74px;
+    line-height: 18px;
+}
+.employment__service li{
+    display: inline-block;
+    vertical-align: top;
+    width: 235px;
+    line-height: 18px;
+}
+.employment__service-img{
+    height: 105px;
+    margin-bottom: 17px;
+}
+.employment__service li h3{
+    margin-bottom: 9px;
+    font-size: 17px;
+}
+/* -------------- /employment -------------- */
 
 /* --------------- analytics --------------- */
 .analytics{
@@ -469,8 +513,6 @@
     height: 31px;
 }
 /* --------------- /rate-of-site --------------- */
-
-
 
 /* -------- site__header-layout ------- */
 .site__header-layout{
@@ -584,7 +626,6 @@
     width: 32px;
     height: 7px;
 }
-
 .our-info__prices ul li span{
     display: block;
     border: 1px solid #b1b1b2;
@@ -703,7 +744,6 @@
     left: -126px;
     content: "";
 }
-
 .yellow-wall h2{
     font-size: 32px;
     font-weight: normal;
@@ -757,5 +797,4 @@
     font-size: 18px;
     font-family: "Myriad Pro Bold";
 }
-
 /* ------- /yellow-wall ------- */

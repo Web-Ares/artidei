@@ -6,6 +6,8 @@ $(function(){
         prevButton: '.promo-prev',
         paginationClickable: true,
         loop:true,
+        autoplay: 5000,
+        autoplayDisableOnInteraction: false
     });
 
 } );
