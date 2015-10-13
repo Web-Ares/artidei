@@ -92,7 +92,6 @@
     top: 24px;
     left: 0;
 }
-
 .copy{
     position: absolute;
     top: 29px;
@@ -154,14 +153,268 @@
     width: 976px;
     margin: 0 auto;
 }
-
 /* --------------- /site --------------- */
 
+/* ---------------- btn ---------------- */
+.btn{
+    position: relative;
+    display: block;
+    width: 200px;
+    height: 42px;
+    margin-left: 6px;
+    padding-top: 7px;
+    border-radius: 50px;
+    font-size: 16px;
+    letter-spacing: .5px;
+    color: #fff;
+    text-align: center;
+    text-shadow: -1px -1px 0 #777;
+    transition: text-shadow .3s ease;
+    -webkit-transition: text-shadow .3s ease;
+    overflow: hidden;
+    z-index: 3;
+}
+.btn:hover{
+    text-shadow: none
+}
+.btn:before,
+.btn:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    transition: opacity .3s ease;
+    -webkit-transition: opacity .3s ease;
+    opacity: 1;
+}
+.btn:before {
+    background: #ff4900;
+    background: -moz-linear-gradient(top,  #ff4900 0%, #ff5517 2%, #ff5517 10%, #ff7417 77%, #ff7111 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff4900), color-stop(2%,#ff5517), color-stop(10%,#ff5517), color-stop(77%,#ff7417), color-stop(100%,#ff7111));
+    background: -webkit-linear-gradient(top,  #ff4900 0%,#ff5517 2%,#ff5517 10%,#ff7417 77%,#ff7111 100%);
+    background: -o-linear-gradient(top,  #ff4900 0%,#ff5517 2%,#ff5517 10%,#ff7417 77%,#ff7111 100%);
+    background: -ms-linear-gradient(top,  #ff4900 0%,#ff5517 2%,#ff5517 10%,#ff7417 77%,#ff7111 100%);
+    background: linear-gradient(to bottom,  #ff4900 0%,#ff5517 2%,#ff5517 10%,#ff7417 77%,#ff7111 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff4900', endColorstr='#ff7111',GradientType=0 );
+}
+.btn:after{
+    background: #ff7111;
+    background: -moz-linear-gradient(top, #ff7111 0%, #ff7415 15%, #ff7417 56%, #ff5517 90%, #ff5517 98%, #ff4900 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ff7111), color-stop(15%, #ff7415), color-stop(56%, #ff7417), color-stop(90%, #ff5517), color-stop(98%, #ff5517), color-stop(100%, #ff4900));
+    background: -webkit-linear-gradient(top, #ff7111 0%, #ff7415 15%, #ff7417 56%, #ff5517 90%, #ff5517 98%, #ff4900 100%);
+    background: -o-linear-gradient(top, #ff7111 0%, #ff7415 15%, #ff7417 56%, #ff5517 90%, #ff5517 98%, #ff4900 100%);
+    background: -ms-linear-gradient(top, #ff7111 0%, #ff7415 15%, #ff7417 56%, #ff5517 90%, #ff5517 98%, #ff4900 100%);
+    background: linear-gradient(to bottom, #ff7111 0%, #ff7415 15%, #ff7417 56%, #ff5517 90%, #ff5517 98%, #ff4900 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff7111', endColorstr='#ff4900', GradientType=0);
+}
+.btn:hover:after{
+    opacity: 0;
+}
+.btn-wrap{
+    display: inline-block;
+    position: relative;
+}
+.btn-wrap img{
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    margin-left: -11px;
+}
+/* ---------------- /btn --------------- */
+
+/* -------- site__header-layout ------- */
+.site__header-layout{
+    position: relative;
+    width: 976px;
+    margin: 0 auto;
+    text-align: center;
+}
+.contacts-info{
+    position: absolute;
+    top: 8px;
+    right: 0;
+}
+.phone__contacts-info{
+    font-size: 24px;
+    letter-spacing: -1px;
+    color: #000;
+    cursor: default;
+}
+.phone__contacts-info span{
+    color: #ffa713;
+}
+.contacts-info__graph{
+    font-size: 12px;
+    color: #808080;
+}
+/* ------- /site__header-layout ------- */
+
+/* --------------- logo --------------- */
+.logo {
+    position: absolute;
+    top: 6px;
+    left: 0;
+}
+.logo .name{
+    display: inline-block;
+    width: 181px;
+    height: 47px;
+    margin-left: 16px;
+    margin-top: 6px;
+    padding-left: 22px;
+    border-left: 1px solid #706f70;
+    font-size: 12px;
+    line-height: 11px;
+    vertical-align: top;
+    text-align: left;
+}
+.logo .name strong{
+    font: 15px 'Myriad Pro Bold', serif;
+}
+/* --------------- /logo --------------- */
+
+/* ----------- header__menu ------------ */
+.header__menu{
+    position: absolute;
+    top: 20px;
+    left: 304px;
+}
+.header__menu a{
+    display: inline-block;
+    height: 30px;
+    margin-right: 10px;
+    padding: 4px 16px 0;
+    font-size: 16px;
+    color: #767676;
+}
+.header__menu span{
+    border-bottom: 2px dotted #767676;
+    transition: border-bottom-color .3s ease;
+    -webkit-transition: border-bottom-color .3s ease;
+}
+.header__menu a:hover span{
+    border-bottom-color: transparent;
+}
+.header__menu .active{
+    padding: 4px 26px 0;
+    border-radius: 20px;
+    background-color: #ffa714;
+    color: #000;
+    cursor: default;
+}
+/* ----------- /header__menu ----------- */
+
+/* ---------- promo-section ------------ */
+.promo-section{
+    height: 597px;
+    background-color: #606071;
+}
+.promo-section__layout{
+    position: relative;
+    width: 976px;
+    margin: 0 auto;
+}
+.promo-section__item{
+    position: absolute;
+    top: 135px;
+    right: 0;
+    width: 360px;
+    font-size: 16px;
+    line-height: 25px;
+}
+.promo-section__item h2{
+    width: 320px;
+    margin-bottom: 52px;
+    font-size: 32px;
+    font-weight: normal;
+    line-height: 38px;
+}
+.promo-section__item > div{
+    margin-left: 3px;
+    margin-bottom: 42px;
+}
+.promo-section__item span{
+    padding: 0 5px;
+    background-color: #ffc62e;
+}
+.promo-swiper .swiper-slide{
+    height: 597px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.promo-swiper .swiper-wrapper{
+    margin-bottom: 7px;
+}
+.promo-pagination{
+    position: relative;
+    text-align: center;
+    z-index: 8;
+}
+.promo-pagination .swiper-pagination-bullet{
+    width: 7px;
+    height: 7px;
+    margin: 0 4px;
+    background-color: #ededed;
+    box-shadow: 1px 1px 1px #777 inset;
+    opacity: 1;
+}
+.promo-pagination .swiper-pagination-bullet-active{
+    background-color: #000;
+}
+.promo-prev,
+.promo-next{
+    position: absolute;
+    top: 260px;
+    left: 50%;
+    width: 46px;
+    height: 88px;
+    margin-top: 0;
+    border: 1px solid rgba(119,115,118,.5);
+    border-radius: 5px;
+    background: url("../img/ico-promo-arrows.png") no-repeat 9px 50% rgba(209,209,209,.5);
+}
+.promo-prev{
+    margin-left: -580px;
+}
+.promo-next{
+    right: auto;
+    margin-left: 522px;
+    background-position: -46px 50%;
+}
+/* ---------- /promo-section ----------- */
+
+/* -------- site__header-layout ------- */
+.site__header-layout{
+    position: relative;
+    width: 976px;
+    margin: 0 auto;
+    text-align: center;
+}
+.contacts-info{
+    position: absolute;
+    top: 8px;
+    right: 0;
+}
+.phone__contacts-info{
+    font-size: 24px;
+    letter-spacing: -1px;
+    color: #000;
+}
+.phone__contacts-info span{
+    color: #ffa713;
+}
+.contacts-info__graph{
+    font-size: 12px;
+    color: #808080;
+}
+/* ------- /site__header-layout ------- */
 
 /* --------------- analytics --------------- */
 .analytics{
     text-align: center;
-
 }
 .analytics ul{
     display: inline-block;
@@ -170,7 +423,6 @@
     display: inline-block;
     padding: 0 34px;
 }
-
 /* --------------- /analytics --------------- */
 
 /* --------------- socila-links --------------- */
@@ -217,34 +469,6 @@
     height: 31px;
 }
 /* --------------- /rate-of-site --------------- */
-
-
-
-/* -------- site__header-layout ------- */
-.site__header-layout{
-    position: relative;
-    width: 976px;
-    margin: 0 auto;
-    text-align: center;
-}
-.contacts-info{
-    position: absolute;
-    top: 8px;
-    right: 0;
-}
-.phone__contacts-info{
-    font-size: 24px;
-    letter-spacing: -1px;
-    color: #000;
-}
-.phone__contacts-info span{
-    color: #ffa713;
-}
-.contacts-info__graph{
-    font-size: 12px;
-    color: #808080;
-}
-/* ------- /site__header-layout ------- */
 
 /* ------- yellow-wall ------- */
 .yellow-wall{
@@ -323,59 +547,3 @@
 }
 
 /* ------- /yellow-wall ------- */
-
-/* --------------- logo --------------- */
-.logo {
-    position: absolute;
-    top: 6px;
-    left: 0;
-}
-.logo .name{
-    display: inline-block;
-    width: 181px;
-    height: 47px;
-    margin-left: 16px;
-    margin-top: 6px;
-    padding-left: 22px;
-    border-left: 1px solid #706f70;
-    font-size: 12px;
-    line-height: 11px;
-    vertical-align: top;
-    text-align: left;
-}
-.logo .name strong{
-    font: 15px 'Myriad Pro Bold', serif;
-}
-/* --------------- /logo --------------- */
-
-/* ----------- header__menu ------------ */
-.header__menu{
-    position: absolute;
-    top: 20px;
-    left: 304px;
-}
-.header__menu a{
-    display: inline-block;
-    height: 30px;
-    margin-right: 10px;
-    padding: 4px 16px 0;
-    font-size: 16px;
-    color: #767676;
-}
-.header__menu span{
-    border-bottom: 2px dotted #767676;
-}
-.header__menu .active{
-    padding: 4px 26px 0;
-    border-radius: 20px;
-    background-color: #ffa714;
-    color: #000;
-}
-/* ----------- /header__menu ----------- */
-
-/* ---------- promo-section ------------ */
-.promo-section{
-    height: 597px;
-    background-color: #606071;
-}
-/* ---------- /promo-section ----------- */
