@@ -30,8 +30,14 @@
 
 /* --------------- fonts --------------- */
 @font-face {
-    font-family: "Font Name";
-    src: url("../fonts/font.woff") format("woff");
+    font-family: "Myriad Pro Light";
+    src: url("../fonts/MyriadPro-Light.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Myriad Pro Bold";
+    src: url("../fonts/MyriadPro-Bold.woff") format("woff");
     font-weight: normal;
     font-style: normal;
 }
@@ -42,6 +48,7 @@
     position: relative;
     min-height: 100%;
     min-width: 976px;
+    font: 14px 'Myriad Pro Light', serif;
     overflow: hidden;
     z-index: 1;
 }
@@ -77,10 +84,77 @@
 }
 /* --------------- /site --------------- */
 
+/* -------- site__header-layout ------- */
+.site__header-layout{
+    position: relative;
+    width: 976px;
+    margin: 0 auto;
+    text-align: center;
+}
+.contacts-info{
+    position: absolute;
+    top: 8px;
+    right: 0;
+}
+.phone__contacts-info{
+    font-size: 24px;
+    letter-spacing: -1px;
+    color: #000;
+}
+.phone__contacts-info span{
+    color: #ffa713;
+}
+.contacts-info__graph{
+    font-size: 12px;
+    color: #808080;
+}
+/* ------- /site__header-layout ------- */
+
 /* --------------- logo --------------- */
 .logo {
     position: absolute;
-    top: 0;
+    top: 6px;
     left: 0;
 }
+.logo .name{
+    display: inline-block;
+    width: 181px;
+    height: 47px;
+    margin-left: 16px;
+    margin-top: 6px;
+    padding-left: 22px;
+    border-left: 1px solid #706f70;
+    font-size: 12px;
+    line-height: 11px;
+    vertical-align: top;
+    text-align: left;
+}
+.logo .name strong{
+    font: 15px 'Myriad Pro Bold', serif;
+}
 /* --------------- /logo --------------- */
+
+/* ----------- header__menu ------------ */
+.header__menu{
+    position: absolute;
+    top: 20px;
+    left: 304px;
+}
+.header__menu a{
+    display: inline-block;
+    height: 30px;
+    margin-right: 10px;
+    padding: 4px 16px 0;
+    font-size: 16px;
+    color: #767676;
+}
+.header__menu span{
+    border-bottom: 2px dotted #767676;
+}
+.header__menu .active{
+    padding: 4px 26px 0;
+    border-radius: 20px;
+    background-color: #ffa714;
+    color: #000;
+}
+/* ----------- /header__menu ----------- */
