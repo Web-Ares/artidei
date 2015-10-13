@@ -147,9 +147,27 @@
     text-decoration: underline;
 }
 
-
+.site__content__center{
+    width: 97px;
+    margin: 0 auto;
+}
 
 /* --------------- /site --------------- */
+
+
+/* --------------- analytics --------------- */
+.analytics{
+    text-align: center;
+
+}
+.analytics ul{
+    display: inline-block;
+}
+.analytics ul li{
+    display: inline-block;
+}
+
+/* --------------- /analytics --------------- */
 
 /* --------------- socila-links --------------- */
 .socila-links{
