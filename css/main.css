@@ -364,6 +364,72 @@
 }
 /* ------- /our-info ------- */
 
+/* ------- comersial-strategy ------- */
+.comersial-strategy{
+    height: 527px;
+    padding-top: 26px;
+    background: #efefef;
+}
+.comersial-strategy > div{
+    width: 976px;
+    margin: 0 auto;
+}
+.comersial-strategy h2{
+    font-size: 32px;
+    color: #363636;
+    text-align: center;
+    font-weight: normal;
+}
+.comersial-strategy__description{
+    background: url("../img/comersial-back.jpg") no-repeat  269px -20px;
+    height: 527px;
+    position: relative;
+}
+.comersial-strategy__description > div{
+    color: #706f6f;
+    font-size: 14px;
+    line-height: 18px;
+    width: 260px;
+    position: absolute;
+}
+.comersial-strategy__description__itme1 h3{
+    color: #ff5a00;
+    font-size: 16px;
+    margin-bottom: 11px;
+}
+.comersial-strategy__description__itme2 h3{
+    color: #19ab9e;
+    font-size: 16px;
+    margin-bottom: 11px;
+}
+.comersial-strategy__description__itme3 h3{
+    color: #0b8acc;
+    font-size: 16px;
+    margin-bottom: 11px;
+}
+.comersial-strategy__description__itme4 h3{
+    color: #ab1919;
+    font-size: 16px;
+    margin-bottom: 11px;
+}
+.comersial-strategy__description__itme1{
+    top: 70px;
+}
+.comersial-strategy__description__itme2{
+    top: 274px;
+}
+.comersial-strategy__description__itme3{
+    right: 0;
+    top: 70px;
+    width: 225px !important;
+}
+.comersial-strategy__description__itme4{
+    right: 0;
+    top: 274px;
+    width: 225px !important;
+}
+/* ------- /comersial-strategy ------- */
+
 /* ------- yellow-wall ------- */
 .yellow-wall{
     background: url("../img/yallow-wall.jpg");
