@@ -246,6 +246,84 @@
 }
 /* ------- /site__header-layout ------- */
 
+/* ------- yellow-wall ------- */
+.yellow-wall{
+    background: url("../img/yallow-wall.jpg");
+}
+.yellow-wall > div{
+    width: 976px;
+    margin: 0 auto;
+    padding-left: 476px;
+    height: 531px;
+    padding-top: 50px;
+    position: relative;
+}
+.yellow-wall > div:after{
+    background: url("../img/yallow-man.jpg") no-repeat;
+    width: 548px;
+    height: 531px;
+    position: absolute;
+    top: 0;
+    left: -126px;
+    content: "";
+}
+
+.yellow-wall h2{
+    font-size: 32px;
+    font-weight: normal;
+    color: #252525;
+    opacity: 0.75;
+    margin-bottom: 35px;
+}
+.yellow-wall ul{
+    margin-bottom: 67px;
+}
+.yellow-wall li{
+    background: url("../img/yallow-wall-chack-list.png") no-repeat 0 4px;
+    padding-left: 35px;
+    color: #363636;
+    font-size: 18px;
+    margin-bottom: 14px;
+    white-space: nowrap;
+}
+.yellow-wall blockquote{
+    position: relative;
+    color: #363636;
+    font-size: 14px;
+    line-height: 18px;
+    margin: 0 0 30px 0;
+    padding: 0 12px 0 33px;
+}
+.yellow-wall blockquote:after{
+    position: absolute;
+    content: "";
+    top: -14px;
+    left: -14px;
+    background: url("../img/blackqute1.png") no-repeat;
+    width: 34px;
+    height: 26px;
+}
+.yellow-wall blockquote:before{
+    position: absolute;
+    content: "";
+    bottom: 0;
+    right: -7px;
+    background: url("../img/blackqute2.png") no-repeat;
+    width: 34px;
+    height: 26px;
+}
+.yellow-wall__sing{
+    margin-left: 34px;
+}
+.yellow-wall__sing p{
+    margin-bottom: 4px;
+    color: #121212;
+    font-size: 18px;
+    font-family: "Myriad Pro Bold";
+}
+
+/* ------- /yellow-wall ------- */
+
 /* --------------- logo --------------- */
 .logo {
     position: absolute;
