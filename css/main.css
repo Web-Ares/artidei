@@ -89,13 +89,14 @@
     top: 24px;
     left: 0;
 }
+
 .copy{
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 29px;
+    left: 89px;
     border-left: 1px dotted #aeaeae;
     padding-left: 24px;
-    width: 137px;
+    width: 170px;
     color: #afafaf;
     font-size: 13px;
 }
@@ -105,19 +106,97 @@
 .copy span{
     white-space: pre-line;
 }
+.site__footer__address{
+    position: absolute;
+    top: 32px;
+    right: 0;
+    font-style: normal;
+    text-align: right;
+}
+.site__footer__address__tel{
+    color: #afafaf;
+    font-size: 24px;
+    text-decoration: none;
+}
+.site__footer__address__tel span{
+    display: inline;
+    position: relative;
+    padding-right: 10px;
+}
+.site__footer__address__tel span:after{
+    content: "";
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #ffa713;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin-top: -2px;
+}
+.site__footer__address dl dd,
+.site__footer__address dl dt{
+    display: inline-block;
+    color: #ffa614;
+    font-size: 14px;
+}
+.site__footer__address dl a{
+    color: #b0b0b0;
+}
+.site__footer__address dl a:hover{
+    text-decoration: underline;
+}
+
+
 
 /* --------------- /site --------------- */
 
 /* --------------- socila-links --------------- */
 .socila-links{
-
+    position: absolute;
+    top: 41px;
+    left: 410px;
 }
 .socila-links li{
     display: inline-block;
     vertical-align: top;
 }
+.socila-links li a{
+    background: url("../img/footer-social.png") no-repeat;
+    width: 30px;
+    height: 30px;
+    display: block;
+}
 
+.socila-links__vk{
+    background-position: 0 0;
+}
+.socila-links__od{
+    background-position: -32px 0 !important;
+}
+.socila-links__fb{
+    background-position: -65px 0 !important;
+}
+.socila-links__tt{
+    background-position: -98px 0 !important;
+}
+.socila-links__email{
+    background-position: -131px 0 !important;
+}
 /* --------------- /socila-links --------------- */
+
+/* --------------- rate-of-site --------------- */
+.rate-of-site{
+    position: absolute;
+    top: 39px;
+    right: 200px;
+    background: url("../img/rate.png");
+    width: 31px;
+    height: 31px;
+}
+/* --------------- /rate-of-site --------------- */
+
+
 
 /* -------- site__header-layout ------- */
 .site__header-layout{
