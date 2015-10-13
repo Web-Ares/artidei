@@ -64,7 +64,10 @@
     z-index: 2;
 }
 .site__header {
-    position: relative;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
     height: 71px;
     background: rgba(255,255,255,.7);
     z-index: 3;
@@ -290,3 +293,10 @@
     color: #000;
 }
 /* ----------- /header__menu ----------- */
+
+/* ---------- promo-section ------------ */
+.promo-section{
+    height: 597px;
+    background-color: #606071;
+}
+/* ---------- /promo-section ----------- */
