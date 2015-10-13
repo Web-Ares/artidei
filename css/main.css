@@ -246,6 +246,124 @@
 }
 /* ------- /site__header-layout ------- */
 
+/* ------- our-info ------- */
+.our-info{
+    color: #363636;
+    padding-top: 43px;
+    padding-bottom: 23px;
+}
+.our-info__ability{
+    width: 50%;
+    display: inline-block;
+    border-right: 1px solid #cacbcf;
+    text-align: center;
+    position: relative;
+    padding: 0 17px;
+}
+.our-info h2{
+    font-size: 32px;
+    margin-bottom: 26px;
+    font-weight: normal;
+}
+.our-info p{
+    color: #706f6f;
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 55px;
+}
+.our-info__ability ul{
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 29px;
+}
+
+.our-info__ability ul li{
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 14px;
+}
+.our-info__ability:after{
+    content: "";
+    position: absolute;
+    bottom: -161px;
+    right: -9px;
+    background: url("../img/heand.jpg") no-repeat;
+    width: 95px;
+    height: 161px;
+}
+.our-info__prices{
+    width: 48%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 0 0 61px;
+    text-align: center;
+}
+.our-info__prices ul{
+    display: inline-block;
+    vertical-align: top;
+    text-align: justify;
+    width: 100%;
+    margin-bottom: 51px;
+}
+.our-info__prices ul:after{
+    content: "";
+    width: 100%;
+    display: inline-block;
+    vertical-align: top;
+}
+.our-info__prices ul li{
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    vertical-align: top;
+    font-size: 18px;
+    color: #363636;
+}
+.our-info__prices ul li:first-of-type:after{
+    display: none;
+}
+
+.our-info__prices ul li:after{
+    content: "";
+    position: absolute;
+    top: 43px;
+    left: -39px;
+    background: url("../img/dotes.png");
+    width: 32px;
+    height: 7px;
+}
+
+.our-info__prices ul li span{
+    display: block;
+    border: 1px solid #b1b1b2;
+    border-radius: 50%;
+    width: 84px;
+    height: 84px;
+    font-family: "Myriad Pro Bold";
+    line-height: 84px;
+    font-size: 16px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    color: #363636;
+    background: #f3f3f5;
+}
+.get-discount-btn{
+    display: block;
+    margin: 0 auto;
+    width: 208px;
+    height: 43px;
+    line-height: 43px;
+    border-radius: 30px;
+    background: #ffc62e;
+    color: #363636;
+    font-size: 18px;
+    box-shadow: 2px 2px 2px #c2c2c2;
+}
+.get-discount-btn:hover{
+    box-shadow: none;
+}
+/* ------- /our-info ------- */
+
 /* ------- yellow-wall ------- */
 .yellow-wall{
     background: url("../img/yallow-wall.jpg");
