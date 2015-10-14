@@ -10,4 +10,13 @@ $(function(){
         autoplayDisableOnInteraction: false
     });
 
+    var reviews = new Swiper('.reviews-swiper', {
+        pagination: '.reviews-pagination',
+        nextButton: '.reviews-next',
+        prevButton: '.reviews-prev',
+        paginationClickable: true,
+        loop:true,
+        autoplayDisableOnInteraction: false
+    });
+
 } );

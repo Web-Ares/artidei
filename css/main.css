@@ -348,33 +348,24 @@
 .promo-swiper .swiper-wrapper{
     margin-bottom: 7px;
 }
-.promo-pagination{
-    position: relative;
-    text-align: center;
-    z-index: 8;
-}
-.promo-pagination .swiper-pagination-bullet{
-    width: 7px;
-    height: 7px;
-    margin: 0 4px;
-    background-color: #ededed;
-    box-shadow: 1px 1px 1px #777 inset;
-    opacity: 1;
-    transition: box-shadow .4s ease;
-    -webkit-transition: box-shadow .4s ease;
-}
-.promo-pagination .swiper-pagination-bullet:hover{
-    box-shadow: 0 0 2px #777 inset;
-}
-.promo-pagination .swiper-pagination-bullet-active{
-    background-color: #000;
-    cursor: default;
-}
 .promo-prev,
 .promo-next{
-    position: absolute;
     top: 260px;
     left: 50%;
+}
+.promo-prev{
+    margin-left: -580px;
+}
+.promo-next{
+    right: auto;
+    margin-left: 522px;
+}
+/* ---------- /promo-section ----------- */
+
+/* ---------- /promo-section ----------- */
+.swiper-button-next,
+.swiper-button-prev{
+    position: absolute;
     width: 46px;
     height: 88px;
     margin-top: 0;
@@ -384,20 +375,35 @@
     transition: background-color .3s ease;
     -webkit-transition: background-color .3s ease;
 }
-.promo-prev{
-    margin-left: -580px;
-}
-.promo-next{
-    right: auto;
-    margin-left: 522px;
+.swiper-button-next{
     background-position: -46px 50%;
 }
-.promo-prev:hover,
-.promo-next:hover{
+.swiper-button-prev:hover,
+.swiper-button-next:hover{
     background-color: rgba(209,209,209,.8);
 }
-/* ---------- /promo-section ----------- */
-
+.swiper-pagination-clickable{
+    position: relative;
+    text-align: center;
+    z-index: 8;
+}
+.swiper-pagination-bullet{
+    width: 7px;
+    height: 7px;
+    margin: 0 4px;
+    background-color: #ededed;
+    box-shadow: 1px 1px 1px #777 inset;
+    opacity: 1;
+    transition: box-shadow .4s ease;
+    -webkit-transition: box-shadow .4s ease;
+}
+.swiper-pagination-bullet:hover{
+    box-shadow: 0 0 2px #777 inset;
+}
+.swiper-pagination-bullet-active{
+    background-color: #000;
+    cursor: default;
+}
 /* -------- site__header-layout ------- */
 .site__header-layout{
     position: relative;
@@ -436,9 +442,20 @@
     font: normal 32px/38px 'Myriad Pro Light', serif;
 }
 .employment__about{
+    position: relative;
     width: 620px;
     margin: 0 auto 74px;
     line-height: 18px;
+}
+.employment__about:after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -44px;
+    width: 80px;
+    height: 8px;
+    margin-left: -40px;
+    background: url("../img/img-decoration.jpg") repeat-x 0 0;
 }
 .employment__service li{
     display: inline-block;
@@ -455,6 +472,62 @@
     font-size: 17px;
 }
 /* -------------- /employment -------------- */
+
+/* ---------------- reviews ---------------- */
+.reviews {
+    position: relative;
+    width: 976px;
+    margin: 0 auto 56px;
+    padding: 56px 0 50px;
+    text-align: center;
+    background: url('../img/bg-reviews.jpg') no-repeat 100% 100%;
+    overflow: hidden;
+}
+.reviews:after{
+    content: '';
+    position: absolute;
+    left: 42px;
+    right: 173px;
+    bottom: 4px;
+    height: 8px;
+    background: url("../img/img-decoration.jpg") repeat-x 0 0;
+}
+.reviews h2{
+    margin-bottom: 58px;
+    font-size: 32px;
+}
+.reviews-swiper .swiper-wrapper{
+    margin-bottom: 37px;
+}
+.reviews-swiper .swiper-slide{
+    font-size: 16px;
+    line-height: 22px;
+    text-align: justify;
+}
+.swiper-slide .author{
+    padding-top: 38px;
+    text-align: center;
+    font: 14px/22px 'Myriad Pro Light', serif;
+}
+.swiper-slide .author strong{
+    font: 600 18px 'Myriad Pro', serif;
+}
+.reviews-swiper{
+    width: 663px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.reviews-prev,
+.reviews-next{
+    top: 165px;
+}
+.reviews-prev{
+    left: 1px;
+}
+.reviews-next{
+    right: 2px;
+}
+/* --------------- /reviews ---------------- */
 
 /* --------------- analytics --------------- */
 .analytics{
