@@ -1,4 +1,4 @@
-$(function(){
+( function(){
 
     if ($('.promo-swiper').length){
         $('.promo-swiper').each(function(){
@@ -26,4 +26,50 @@ $(function(){
         });
     }
 
-} );
+    $( function(){
+        $('.portfolio__menu').each(function () {
+            tabs($(this));
+        });
+    } );
+
+    var tabs = function (obj) {
+
+        //private properties
+        var _self = this,
+            _tab = obj.find( '.news__tab li'),
+            _wrap = obj.find( '.tab__item'),
+            i = 0,
+            _obj = obj;
+
+        //private methods
+        var _addEvents = function () {
+                showPage = function(i){
+                    _wrap.hide();
+                    _wrap.eq(i).show();
+                    _tab.removeClass("active");
+                    _tab.eq(i).addClass("active");
+                };
+
+                showPage(0);
+
+                _tab.each(function(index, element){
+                    $(element).attr("data-page", i);
+                    i++;
+                });
+
+                _tab.click(function(){
+                    showPage(parseInt($(this).attr("data-page")));
+                });
+            },
+            _init = function () {
+                _addEvents();
+            };
+
+        //public properties
+
+        //public methods
+
+        _init();
+    };
+
+})();

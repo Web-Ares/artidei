@@ -15,14 +15,26 @@
 .portfolio{
     width: 976px;
     margin: 0 auto;
-    padding-top: 109px;
     height: 957px;
 }
 .portfolio__menu{
+    position: relative;
+    padding: 109px 0 44px;
     font-size: 16px;
+    background: url('../img/bg-reviews.jpg') no-repeat 100% 100%;
+}
+.portfolio__menu:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 173px;
+    bottom: 4px;
+    height: 8px;
+    background: url("../img/img-decoration.jpg") repeat-x 2px 0;
 }
 .news__tab{
     display: inline-block;
+    margin-right: 25px;
     padding-right: 15px;
     background: url('../img/ico-menu.jpg') no-repeat 100% 50%;
 }
@@ -33,16 +45,53 @@
     padding: 5px 13px 0;
     border: 1px solid transparent;
     border-radius: 15px;
+    cursor: pointer;
+}
+.news__tab span{
+    border-bottom: 1px dashed transparent;
+    transition: border-bottom-color .3s ease;
+    -webkit-transition: border-bottom-color .3s ease;
+}
+.news__tab span:hover{
+    border-bottom-color: #706f6f;
 }
 .news__tab .active{
     padding: 5px 31px 0;
     border-color: #f89c02;
+    cursor: default;
+    transition: border .3s ease;
+    -webkit-transition: border .3s ease;
+}
+.news__tab .active span{
+    border-bottom: none;
 }
 .tab__item{
     display: inline-block;
 }
 .tab__item a{
+    margin-right: 20px;
     color: #706f6f;
+    border-bottom: 1px dashed transparent;
+    transition: border-bottom-color .3s ease;
+    -webkit-transition: border-bottom-color .3s ease;
+}
+.tab__item a:hover{
+    border-bottom-color: #706f6f;
+}
+.tab__item .active{
+    font-family: "Myriad Pro", serif;
+    border-bottom: 2px solid #ffa714;
+    color: #ffa714;
+    cursor: default;
+}
+.tab__item a.active:hover{
+    border-bottom-color: #ffa714;
+}
+.portfolio-swiper .swiper-slide > div{
+    display: table-cell;
+    widows: 280px;
+    height: 290px;
+    vertical-align: middle;
 }
 /* -------------- /portfolio --------------- */
 
