@@ -1,45 +1,10 @@
 @charset "utf-8";
-/* --------------- Style to null --------------- */
-*{-moz-box-sizing:border-box;box-sizing:border-box;}html,body,div,span,h1,h2,h3,h4,h5,h6,p,em,img,strong,sub,sup,b,u,i,dl,dt,dd,ol,ul,li,fieldset,form,label,table,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,a,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{border:0;outline:0;vertical-align:baseline;background:transparent;font-size:100%;margin:0;padding:0;}a{background:transparent;}table{border-collapse:collapse;border-spacing:0;}td,td img{vertical-align:top;}input,select,button,textarea{font-size:12px;font-family:Arial, Helvetica, sans-serif;margin:0;}input[type="text"],input[type="password"],textarea,input[type="email"],input[type="phone"],input[type="number"]{font:12px Arial, Helvetica, sans-serif;padding:0;}input[type="checkbox"]{vertical-align:bottom;}input[type="radio"]{vertical-align:text-bottom;}sub{vertical-align:sub;font-size:smaller;}sup{vertical-align:super;font-size:smaller;}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;}ul,ol{list-style:none;}html{overflow-y:scroll;overflow-x:auto;}html,body{height:100%;}body{line-height:1;color:#000;text-align:left;z-index:1;position:relative;}input [type='text']{padding:0;}textarea{resize:none;overflow:auto;}label,input[type="button"],input[type="submit"],button{cursor:pointer;}input[type="button"],input[type="reset"],input[type="submit"],button,input[type="text"],input[type="password"],textarea,input[type="email"],input[type="tel"],input[type="phone"],input[type="number"]{-webkit-appearance:none;}a,a:visited,a:hover,a:focus,a:active{text-decoration:none;}input[type="submit"]::-moz-focus-inner,button::-moz-focus-inner{border:0;padding:0;}input:invalid{outline:none;-moz-box-shadow:none;border:none;}::-ms-clear{display:none;}input,textarea,input[type="search"]:focus,:focus{outline:none;}
-/* --------------- Style to null --------------- */
 
 /*
-    main styles
+    portfolio styles
     version: 13.10.2015
 
-    placeholder
 
-    fonts
-
-    site
-
-    btn
-
-    site__header-layout
-
-    logo
-
-    header__menu
-
-    promo-section
-
-    swiper
-
-    employment
-
-    reviews
-
-    analytics
-
-    socila-links
-
-    rate-of-site
-
-    our-info
-
-    comersial-strategy
-
-    yellow-wall
 */
 
 /* --------------- placeholder --------------- */
@@ -388,7 +353,7 @@
 }
 /* ---------- /promo-section ----------- */
 
-/* ---------- swiper ----------- */
+/* ---------- /promo-section ----------- */
 .swiper-button-next,
 .swiper-button-prev{
     position: absolute;
@@ -430,7 +395,31 @@
     background-color: #000;
     cursor: default;
 }
-/* ---------- /swiper ----------- */
+/* -------- site__header-layout ------- */
+.site__header-layout{
+    position: relative;
+    width: 976px;
+    margin: 0 auto;
+    text-align: center;
+}
+.contacts-info{
+    position: absolute;
+    top: 8px;
+    right: 0;
+}
+.phone__contacts-info{
+    font-size: 24px;
+    letter-spacing: -1px;
+    color: #000;
+}
+.phone__contacts-info span{
+    color: #ffa713;
+}
+.contacts-info__graph{
+    font-size: 12px;
+    color: #808080;
+}
+/* ------- /site__header-layout ------- */
 
 /* --------------- employment -------------- */
 .employment{
@@ -589,6 +578,32 @@
 }
 /* --------------- /rate-of-site --------------- */
 
+/* -------- site__header-layout ------- */
+.site__header-layout{
+    position: relative;
+    width: 976px;
+    margin: 0 auto;
+    text-align: center;
+}
+.contacts-info{
+    position: absolute;
+    top: 8px;
+    right: 0;
+}
+.phone__contacts-info{
+    font-size: 24px;
+    letter-spacing: -1px;
+    color: #000;
+}
+.phone__contacts-info span{
+    color: #ffa713;
+}
+.contacts-info__graph{
+    font-size: 12px;
+    color: #808080;
+}
+/* ------- /site__header-layout ------- */
+
 /* ------- our-info ------- */
 .our-info{
     color: #363636;
@@ -665,6 +680,7 @@
 .our-info__prices ul li:first-of-type:after{
     display: none;
 }
+
 .our-info__prices ul li:after{
     content: "";
     position: absolute;
@@ -680,7 +696,7 @@
     border-radius: 50%;
     width: 84px;
     height: 84px;
-    font-family: "Myriad Pro Bold", serif;
+    font-family: "Myriad Pro Bold";
     line-height: 84px;
     font-size: 16px;
     margin: 0 auto;
@@ -843,6 +859,6 @@
     margin-bottom: 4px;
     color: #121212;
     font-size: 18px;
-    font-family: "Myriad Pro Bold", serif;
+    font-family: "Myriad Pro Bold";
 }
 /* ------- /yellow-wall ------- */
