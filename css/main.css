@@ -98,8 +98,11 @@
     left: 0;
     right: 0;
     height: 71px;
-    background: rgba(255,255,255,.7);
+    background: rgba(255,255,255,.74);
     z-index: 3;
+}
+.site__header.inside{
+    background-color: #efefef;
 }
 .site__footer {
     z-index: 2;
@@ -130,6 +133,7 @@
     width: 170px;
     color: #afafaf;
     font-size: 13px;
+    line-height: 16px;
 }
 .copy p{
     color: #ffa614;
@@ -295,14 +299,17 @@
     margin-left: 16px;
     margin-top: 6px;
     padding-left: 22px;
-    border-left: 1px solid #706f70;
+    border-left: 1px dotted #706f70;
     font-size: 12px;
     line-height: 11px;
     vertical-align: top;
     text-align: left;
 }
+.logo .name p{
+    line-height: 13px;
+}
 .logo .name strong{
-    font: 15px 'Myriad Pro Bold', serif;
+    font: 15px/17px 'Myriad Pro Bold', serif;
 }
 /* --------------- /logo --------------- */
 
@@ -321,7 +328,7 @@
     color: #767676;
 }
 .header__menu span{
-    border-bottom: 2px dotted #767676;
+    border-bottom: 1px dotted #767676;
     transition: border-bottom-color .3s ease;
     -webkit-transition: border-bottom-color .3s ease;
 }
@@ -376,7 +383,7 @@
     background-repeat: no-repeat;
 }
 .promo-swiper .swiper-wrapper{
-    margin-bottom: 7px;
+    margin-bottom: 10px;
 }
 .promo-prev,
 .promo-next{
@@ -401,7 +408,7 @@
     margin-top: 0;
     border: 1px solid rgba(119,115,118,.5);
     border-radius: 5px;
-    background: url("../img/ico-promo-arrows.png") no-repeat 9px 50% rgba(209,209,209,.5);
+    background: url("../img/ico-promo-arrows.png") no-repeat 9px 50% rgba(229,229,229,.5);
     transition: background-color .3s ease;
     -webkit-transition: background-color .3s ease;
 }
@@ -410,7 +417,7 @@
 }
 .swiper-button-prev:hover,
 .swiper-button-next:hover{
-    background-color: rgba(209,209,209,.8);
+    background-color: rgba(229,229,229,.8);
 }
 .swiper-pagination-clickable{
     position: relative;
@@ -501,6 +508,8 @@
 .reviews h2{
     margin-bottom: 58px;
     font-size: 32px;
+    font-weight: normal;
+    color: #5a5a5a;
 }
 .reviews-swiper .swiper-wrapper{
     margin-bottom: 37px;
@@ -526,12 +535,17 @@
 .reviews-prev,
 .reviews-next{
     top: 165px;
+    background-color: #f3f3f3;
 }
 .reviews-prev{
     left: 1px;
 }
 .reviews-next{
     right: 2px;
+}
+.reviews-prev:hover,
+.reviews-next:hover{
+    background-color: #e6e6e6;
 }
 /* --------------- /reviews ---------------- */
 
@@ -1055,8 +1069,189 @@
     font-weight: normal;
     margin-bottom: 19px;
 }
-
 /* ------- /reviews_wait ------- */
+
+/* --------------- portfolio --------------- */
+.portfolio{
+    position: relative;
+    width: 976px;
+    margin: 0 auto;
+    height: 957px;
+}
+.portfolio__menu{
+    position: relative;
+    margin-bottom: 49px;
+    padding: 109px 0 44px;
+    font-size: 16px;
+    background: url('../img/bg-reviews.jpg') no-repeat 100% 100%;
+}
+.portfolio__menu:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 173px;
+    bottom: 4px;
+    height: 8px;
+    background: url("../img/img-decoration.jpg") repeat-x 2px 0;
+}
+.news__tab{
+    display: inline-block;
+    margin-right: 25px;
+    padding-right: 15px;
+    background: url('../img/ico-menu.jpg') no-repeat 100% 50%;
+}
+.news__tab li{
+    display: inline-block;
+    height: 32px;
+    margin-right: 7px;
+    padding: 5px 13px 0;
+    border: 1px solid transparent;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.news__tab span{
+    border-bottom: 1px dashed transparent;
+    transition: border-bottom-color .3s ease;
+    -webkit-transition: border-bottom-color .3s ease;
+}
+.news__tab span:hover{
+    border-bottom-color: #706f6f;
+}
+.news__tab .active{
+    padding: 5px 31px 0;
+    border-color: #f89c02;
+    cursor: default;
+    transition: border .3s ease;
+    -webkit-transition: border .3s ease;
+}
+.news__tab .active span{
+    border-bottom: none;
+}
+.tab__item{
+    display: inline-block;
+}
+.tab__item a{
+    margin-right: 20px;
+    color: #706f6f;
+    border-bottom: 1px dashed transparent;
+    transition: border-bottom-color .3s ease;
+    -webkit-transition: border-bottom-color .3s ease;
+}
+.tab__item a:hover{
+    border-bottom-color: #706f6f;
+}
+.tab__item .active{
+    font-family: "Myriad Pro", serif;
+    border-bottom: 2px solid #ffa714;
+    color: #ffa714;
+    cursor: default;
+}
+.tab__item a.active:hover{
+    border-bottom-color: #ffa714;
+}
+.portfolio-swiper{
+    position: relative;
+    overflow: hidden;
+}
+.portfolio-swiper .swiper-wrapper{
+    margin-bottom: 37px;
+}
+.portfolio-swiper .swiper-slide{
+    text-align: justify;
+}
+.portfolio-swiper .swiper-slide li{
+    display: inline-block;
+    margin: 0 11px 30px;
+}
+.portfolio-swiper .swiper-slide li > div{
+    display: table-cell;
+    width: 280px;
+    height: 290px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-align: center;
+}
+.portfolio-swiper .swiper-slide li img{
+}
+.portfolio-next,
+.portfolio-prev{
+    top: 477px;
+    background-color: #f3f3f3;
+}
+.portfolio-next{
+    right: -109px;
+}
+.portfolio-prev{
+    left: -119px;
+}
+/* -------------- /portfolio --------------- */
+
+/* ------------ mobile-sites --------------- */
+.mobile-sites{
+    height: 527px;
+    background-color: #efefef;
+}
+.mobile-sites > div{
+    height: inherit;
+    width: 1090px;
+    margin: 0 auto;
+    padding-top: 65px;
+    padding-left: 721px;
+    line-height: 18px;
+    background: url("../img/mobile-sites.jpg") no-repeat 0 80px;
+}
+.mobile-sites h2{
+    margin-bottom: 17px;
+    font: normal 32px/38px 'Myriad Pro Light', serif;
+}
+.mobile-sites > div p{
+    margin-bottom: 50px;
+}
+/* ------------ /mobile-sites -------------- */
+
+/* --------------- clients ----------------- */
+.clients{
+    width: 976px;
+    margin: 0 auto;
+    padding-top: 186px;
+    text-align: center;
+    background: url("../img/bg-clients.jpg") no-repeat 59% 32px;
+}
+.clients h2{
+    margin-bottom: 17px;
+    font: normal 32px/38px 'Myriad Pro Light', serif;
+}
+.clients__about{
+    position: relative;
+    width: 610px;
+    margin: 0 auto 108px;
+    line-height: 18px;
+}
+.clients__about:after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -63px;
+    width: 80px;
+    height: 8px;
+    margin-left: -40px;
+    background: url("../img/img-decoration.jpg") repeat-x 0 0;
+}
+.clients ul li{
+    display: inline-block;
+    margin-bottom: 22px;
+}
+.clients ul li div{
+    display: table-cell;
+    height: 86px;
+    width: 220px;
+    vertical-align: middle;
+    overflow: hidden;
+}
+.clients ul li img{
+    max-width: 206px;
+}
+/* --------------- /clients ---------------- */
 
 input[type=radio   ]:not(old){
     width     : 2em;
