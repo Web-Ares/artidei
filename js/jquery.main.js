@@ -26,77 +26,78 @@
         });
     }
 
+})();
 
-    ymaps.ready(function () {
-        var myMap = new ymaps.Map('map', {
-                center: [55.849974, 37.670016],
-                zoom: 14
-            }, {
-                searchControlProvider: 'yandex#search'
-            }),
-            myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
-                hintContent: 'Собственный значок метки',
-                balloonContent: 'Это красивая метка'
-            }, {
-                // Опции.
-                // Необходимо указать данный тип макета.
-                iconLayout: 'default#image',
-                // Своё изображение иконки метки.
-                iconImageHref: 'img/myIcon.png',
-                // Размеры метки.
-                iconImageSize: [113, 108],
-                // Смещение левого верхнего угла иконки относительно
-                // её "ножки" (точки привязки).
-                iconImageOffset: [-113, -108]
-            });
-
-        myMap.geoObjects.add(myPlacemark);
+$( function(){
+    $('.portfolio__menu').each(function () {
+        tabs($(this));
     });
+    if($('#map').length){
+        ymaps.ready(function () {
+            var myMap = new ymaps.Map('map', {
+                    center: [55.849974, 37.670016],
+                    zoom: 14
+                }, {
+                    searchControlProvider: 'yandex#search'
+                }),
+                myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+                    hintContent: 'Собственный значок метки',
+                    balloonContent: 'Это красивая метка'
+                }, {
+                    // Опции.
+                    // Необходимо указать данный тип макета.
+                    iconLayout: 'default#image',
+                    // Своё изображение иконки метки.
+                    iconImageHref: 'img/myIcon.png',
+                    // Размеры метки.
+                    iconImageSize: [113, 108],
+                    // Смещение левого верхнего угла иконки относительно
+                    // её "ножки" (точки привязки).
+                    iconImageOffset: [-113, -108]
+                });
 
-} );    $( function(){
-        $('.portfolio__menu').each(function () {
-            tabs($(this));
+            myMap.geoObjects.add(myPlacemark);
         });
-    } );
+    }
 
-    var tabs = function (obj) {
+} );
 
-        //private properties
-        var _self = this,
-            _tab = obj.find( '.news__tab li'),
-            _wrap = obj.find( '.tab__item'),
-            i = 0,
-            _obj = obj;
+var tabs = function (obj) {
 
-        //private methods
-        var _addEvents = function () {
-                showPage = function(i){
-                    _wrap.hide();
-                    _wrap.eq(i).show();
-                    _tab.removeClass("active");
-                    _tab.eq(i).addClass("active");
-                };
+    //private properties
+    var _self = this,
+        _tab = obj.find( '.news__tab li'),
+        _wrap = obj.find( '.tab__item'),
+        i = 0,
+        _obj = obj;
 
-                showPage(0);
-
-                _tab.each(function(index, element){
-                    $(element).attr("data-page", i);
-                    i++;
-                });
-
-                _tab.click(function(){
-                    showPage(parseInt($(this).attr("data-page")));
-                });
-            },
-            _init = function () {
-                _addEvents();
+    //private methods
+    var _addEvents = function () {
+            showPage = function(i){
+                _wrap.hide();
+                _wrap.eq(i).show();
+                _tab.removeClass("active");
+                _tab.eq(i).addClass("active");
             };
 
-        //public properties
+            showPage(0);
 
-        //public methods
+            _tab.each(function(index, element){
+                $(element).attr("data-page", i);
+                i++;
+            });
 
-        _init();
-    };
+            _tab.click(function(){
+                showPage(parseInt($(this).attr("data-page")));
+            });
+        },
+        _init = function () {
+            _addEvents();
+        };
 
-})();
+    //public properties
+
+    //public methods
+
+    _init();
+};
