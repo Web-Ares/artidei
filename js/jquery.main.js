@@ -1,30 +1,37 @@
 ( function(){
+    $('.promo-swiper').each(function(){
+        var swiper = new Swiper('.promo-swiper', {
+            pagination: '.promo-pagination',
+            nextButton: '.promo-next',
+            prevButton: '.promo-prev',
+            paginationClickable: true,
+            loop:true,
+            autoplay: 5000,
+            autoplayDisableOnInteraction: false
+        });
+    });
 
-    if ($('.promo-swiper').length){
-        $('.promo-swiper').each(function(){
-            var swiper = new Swiper('.promo-swiper', {
-                pagination: '.promo-pagination',
-                nextButton: '.promo-next',
-                prevButton: '.promo-prev',
-                paginationClickable: true,
-                loop:true,
-                autoplay: 5000,
-                autoplayDisableOnInteraction: false
-            });
+    $('.reviews-swiper').each(function () {
+        var reviews = new Swiper('.reviews-swiper', {
+            pagination: '.reviews-pagination',
+            nextButton: '.reviews-next',
+            prevButton: '.reviews-prev',
+            paginationClickable: true,
+            loop: true,
+            autoplayDisableOnInteraction: false
         });
-    }
-    if ($('.reviews-swiper').length) {
-        $('.reviews-swiper').each(function () {
-            var reviews = new Swiper('.reviews-swiper', {
-                pagination: '.reviews-pagination',
-                nextButton: '.reviews-next',
-                prevButton: '.reviews-prev',
-                paginationClickable: true,
-                loop: true,
-                autoplayDisableOnInteraction: false
-            });
+    });
+
+    $('.portfolio-swiper').each(function () {
+        var portfolio = new Swiper('.portfolio-swiper', {
+            pagination: '.portfolio-pagination',
+            nextButton: '.portfolio-next',
+            prevButton: '.portfolio-prev',
+            paginationClickable: true,
+            loop: true,
+            autoplayDisableOnInteraction: false
         });
-    }
+    });
 
 })();
 
