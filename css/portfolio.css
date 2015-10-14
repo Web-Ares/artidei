@@ -13,12 +13,14 @@
 
 /* --------------- portfolio --------------- */
 .portfolio{
+    position: relative;
     width: 976px;
     margin: 0 auto;
     height: 957px;
 }
 .portfolio__menu{
     position: relative;
+    margin-bottom: 49px;
     padding: 109px 0 44px;
     font-size: 16px;
     background: url('../img/bg-reviews.jpg') no-repeat 100% 100%;
@@ -87,11 +89,39 @@
 .tab__item a.active:hover{
     border-bottom-color: #ffa714;
 }
-.portfolio-swiper .swiper-slide > div{
+.portfolio-swiper{
+    position: relative;
+    overflow: hidden;
+}
+.portfolio-swiper .swiper-wrapper{
+    margin-bottom: 37px;
+}
+.portfolio-swiper .swiper-slide{
+    text-align: justify;
+}
+.portfolio-swiper .swiper-slide li{
+    display: inline-block;
+    margin: 0 11px 30px;
+}
+.portfolio-swiper .swiper-slide li > div{
     display: table-cell;
-    widows: 280px;
+    width: 280px;
     height: 290px;
     vertical-align: middle;
+    overflow: hidden;
+    text-align: center;
+}
+.portfolio-swiper .swiper-slide li img{
+}
+.portfolio-next,
+.portfolio-prev{
+    top: 477px;
+}
+.portfolio-next{
+    right: -109px;
+}
+.portfolio-prev{
+    left: -119px;
 }
 /* -------------- /portfolio --------------- */
 
