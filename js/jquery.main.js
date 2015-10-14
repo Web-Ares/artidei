@@ -30,7 +30,7 @@ $(function(){
     ymaps.ready(function () {
         var myMap = new ymaps.Map('map', {
                 center: [55.849974, 37.670016],
-                zoom: 9
+                zoom: 14
             }, {
                 searchControlProvider: 'yandex#search'
             }),
@@ -47,7 +47,7 @@ $(function(){
                 iconImageSize: [113, 108],
                 // Смещение левого верхнего угла иконки относительно
                 // её "ножки" (точки привязки).
-                iconImageOffset: [-3, -42]
+                iconImageOffset: [-113, -108]
             });
 
         myMap.geoObjects.add(myPlacemark);

@@ -44,13 +44,16 @@
 
 /* --------------- placeholder --------------- */
 ::-webkit-input-placeholder {
-    color: #000;
+    color: #706f6f;
+    font-size: 14px;
 }
 :-moz-placeholder {
-    color: #000;
+    color: #706f6f;
+    font-size: 14px;
 }
 .placeholder {
-    color: #000;
+    font-size: 14px;
+    color: #706f6f;
 }
 /* --------------- /placeholder --------------- */
 
@@ -852,6 +855,7 @@
     width: 976px;
     margin: 0 auto;
     padding-top: 71px;
+    margin-bottom: 41px;
 }
 .contacts__header__map-show{
     background: url("../img/search-on-map.jpg") no-repeat;
@@ -869,6 +873,7 @@
 .contacts__header{
     padding-top: 14px;
     position: relative;
+    margin-bottom: 4px;
 
 }
 .contacts__header address{
@@ -908,10 +913,180 @@
 .contacts__social__fb{
     background-position: -49px 0 !important;
 }
-.contacts__map{
-
+.contacts__map span{
+    font-size: 14px;
+    color: #706f6f;
 }
 .contacts__map #map{
     height: 481px;
+    margin-bottom: 20px;
 }
 /* ------- contacts ------- */
+
+/* ------- get-propouse ------- */
+.get-propouse{
+    background: #efefef;
+    padding-top: 23px;
+    padding-bottom: 25px;
+    margin-bottom: 20px;
+}
+.get-propouse > div{
+    width: 976px;
+    margin: 0 auto;
+}
+.get-propouse h2{
+    text-align: center;
+    font-size: 32px;
+    font-weight: normal;
+    color: #363636;
+    margin-bottom: 51px;
+}
+.get-propouse form{
+    width: 599px;
+    margin: 0 auto;
+}
+.get-propouse__check{
+    margin-bottom: 24px;
+}
+.get-propouse__check p{
+    display: inline-block;
+    vertical-align: top;
+    font-size: 16px;
+    margin-top: 8px;
+}
+.get-propouse__check > div{
+    display: inline-block;
+    vertical-align: top;
+    text-align: justify;
+    width: 470px;
+    margin-top: -17px;
+    margin-left: 21px;
+}
+.get-propouse__check > div:after{
+    content: "";
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+}
+.get-propouse__check > div div{
+    display: inline-block;
+    width: 65px;
+    text-align: center;
+    vertical-align: top;
+}
+.get-propouse__info{
+    margin-bottom: 36px;
+}
+.get-propouse__info > textarea{
+    background: #fff;
+    border-radius: 13px;
+    box-shadow: inset  2px 2px 5px #f2f2f2;
+    border: 1px solid #d9d9d9;
+    overflow: hidden;
+    width: 268px;
+    display: inline-block;
+    vertical-align: top;
+    height: 136px;
+    padding: 15px 29px;
+}
+.get-propouse__info > div{
+    background: #fff;
+    display: inline-block;
+    vertical-align: top;
+    border-radius: 13px;
+    box-shadow: inset  2px 2px 5px #f2f2f2;
+    border: 1px solid #d9d9d9;
+    overflow: hidden;
+    margin-right: 58px;
+    width: 268px;
+}
+.get-propouse__info > div input:first-child{
+    border-top: none;
+}
+.get-propouse__info > div input{
+    height: 45px;
+    width: 100%;
+    padding: 0 29px;
+    background: none;
+    border: none;
+    border-top: 1px solid #d9d9d9;
+}
+.get-propouse form > p{
+    text-align: center;
+    color: #706f6f;
+    font-size: 16px;
+}
+.get-propouse form > p a:hover{
+    text-decoration: underline;
+}
+.get-propouse form > p a{
+    color: #706f6f;
+
+}
+.get-propouse__send{
+    display: block;
+    margin: 0 auto;
+    width: 208px;
+    height: 43px;
+    line-height: 43px;
+    border-radius: 30px;
+    background: #ffc62e;
+    color: #363636;
+    font-size: 18px;
+    border: none;
+    margin-bottom: 15px;
+    box-shadow: 2px 2px 2px #c2c2c2;
+}
+.get-propouse__send:hover{
+    box-shadow: none;
+}
+/* ------- /get-propouse ------- */
+
+/* ------- reviews_wait ------- */
+.reviews_wait{
+    padding-left:  200px;
+    padding-right:  200px;
+    padding-bottom: 62px;
+}
+.reviews_wait h2{
+    font-weight: normal;
+    margin-bottom: 19px;
+}
+
+/* ------- /reviews_wait ------- */
+
+input[type=radio   ]:not(old){
+    width     : 2em;
+    margin    : 0;
+    padding   : 0;
+    font-size : 1em;
+    opacity   : 0;
+}
+input[type=radio   ]:not(old) + label{
+    font-size: 12px;
+    color: #706f6f;
+}
+input[type=radio   ]:not(old) + label > span{
+    display          : block;
+    margin: 0 auto;
+    width            : 39px;
+    height           : 39px;
+
+    border           : 1px solid #cacaca;
+    border-radius    : 50%;
+    background       : #fff;
+    vertical-align   : bottom;
+    margin-bottom: 7px;
+    box-shadow: inset  2px 2px 2px #f2f2f2;
+}
+
+input[type=radio]:not(old):checked +  label > span > span{
+    display          : block;
+    background: url("../img/checked-image.png");
+    width: 22px;
+    height: 21px;
+    margin           : 0 auto;
+    margin-top: 8px;
+
+
+}
