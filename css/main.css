@@ -846,3 +846,72 @@
     font-family: "Myriad Pro Bold", serif;
 }
 /* ------- /yellow-wall ------- */
+
+/* ------- contacts ------- */
+.contacts{
+    width: 976px;
+    margin: 0 auto;
+    padding-top: 71px;
+}
+.contacts__header__map-show{
+    background: url("../img/search-on-map.jpg") no-repeat;
+    white-space: pre-line;
+    color: #706f6f;
+    font-size: 12px;
+    height: 107px;
+    text-decoration: underline;
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 138px;
+    padding-top: 3px;
+    margin-right: 79px;
+}
+.contacts__header{
+    padding-top: 14px;
+    position: relative;
+
+}
+.contacts__header address{
+    display: inline-block;
+    font-style: normal;
+    vertical-align: top;
+    white-space: pre-line;
+    font-size: 16px;
+    margin-right: 82px;
+    color: #706f6f;
+}
+.contacts__header dl{
+    display: inline-block;
+    vertical-align: top;
+    color: #706f6f;
+    font-size: 16px;
+    padding-top: 39px;
+}
+.contacts__social{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.contacts__social li{
+    float: left;
+    margin-left: 1px;
+}
+.contacts__social a{
+    display: block;
+    background: url("../img/contacts-social.jpg") no-repeat;
+    width: 48px;
+    height: 48px;
+}
+.contacts__social__vk{
+    background-position: 0 0 !important;
+}
+.contacts__social__fb{
+    background-position: -49px 0 !important;
+}
+.contacts__map{
+
+}
+.contacts__map #map{
+    height: 481px;
+}
+/* ------- contacts ------- */
