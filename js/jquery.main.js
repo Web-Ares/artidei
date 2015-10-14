@@ -1,7 +1,7 @@
 $(function(){
 
-    if ($('.promo').length){
-        $('.promo').each(function(){
+    if ($('.promo-swiper').length){
+        $('.promo-swiper').each(function(){
             var swiper = new Swiper('.promo-swiper', {
                 pagination: '.promo-pagination',
                 nextButton: '.promo-next',
@@ -13,8 +13,8 @@ $(function(){
             });
         });
     }
-    if ($('.reviews').length) {
-        $('.reviews').each(function () {
+    if ($('.reviews-swiper').length) {
+        $('.reviews-swiper').each(function () {
             var reviews = new Swiper('.reviews-swiper', {
                 pagination: '.reviews-pagination',
                 nextButton: '.reviews-next',
