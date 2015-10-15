@@ -153,6 +153,7 @@
     color: #afafaf;
     font-size: 24px;
     text-decoration: none;
+    cursor: default;
 }
 .site__footer__address__tel span{
     display: inline;
@@ -256,6 +257,25 @@
     bottom: -40px;
     left: 50%;
     margin-left: -11px;
+}
+.btn-transparent{
+    height: 33px;
+    margin: 0 auto;
+    padding-top: 4px;
+    border: 1px solid #f89c02;
+    font-size: 16px;
+    color: #706f6f;
+    text-shadow: none;
+    background-color: #fff;
+    transition: box-shadow .3s ease;
+    -webkit-transition: box-shadow .3s ease;
+}
+.btn-transparent:after,
+.btn-transparent:before{
+    display: none;
+}
+.btn-transparent:hover{
+    box-shadow: 0 0 3px #999;
 }
 /* ---------------- /btn --------------- */
 
@@ -577,8 +597,12 @@
     width: 30px;
     height: 30px;
     display: block;
+    transition: opacity .3s ease;
+    -webkit-transition: opacity .3s ease;
 }
-
+.socila-links li a:hover{
+    opacity: .8;
+}
 .socila-links__vk{
     background-position: 0 0;
 }
@@ -719,6 +743,8 @@
     color: #363636;
     font-size: 18px;
     box-shadow: 2px 2px 2px #c2c2c2;
+    transition: box-shadow .3s ease;
+    -webkit-transition: box-shadow .3s ease;
 }
 .get-discount-btn:hover{
     box-shadow: none;
@@ -1186,6 +1212,39 @@
 }
 /* -------------- /portfolio --------------- */
 
+/* ----------- portfolio-head --------------- */
+.portfolio-head{
+    height: 912px;
+    width: 976px;
+    margin: 0 auto 80px;
+    padding-top: 71px;
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+}
+.portfolio-head h2{
+    margin-bottom: 17px;
+    font: normal 30px/38px 'Myriad Pro Light', serif;
+    color: #363636;
+}
+.portfolio-head a{
+
+}
+.portfolio-wrap{
+    margin-bottom: 50px;
+    text-align: center;
+}
+.portfolio-wrap__img{
+    margin-bottom: 92px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.portfolio-wrap__about{
+    width: 645px;
+    margin: 0 auto;
+    line-height: 18px;
+}
+/* ----------- portfolio-head --------------- */
+
 /* ------------ mobile-sites --------------- */
 .mobile-sites{
     height: 527px;
@@ -1199,10 +1258,12 @@
     padding-left: 721px;
     line-height: 18px;
     background: url("../img/mobile-sites.jpg") no-repeat 0 80px;
+    color: #706f6f;
 }
 .mobile-sites h2{
     margin-bottom: 17px;
     font: normal 32px/38px 'Myriad Pro Light', serif;
+    color: #363636;
 }
 .mobile-sites > div p{
     margin-bottom: 50px;
@@ -1220,12 +1281,14 @@
 .clients h2{
     margin-bottom: 17px;
     font: normal 32px/38px 'Myriad Pro Light', serif;
+    color: #363636;
 }
 .clients__about{
     position: relative;
     width: 610px;
     margin: 0 auto 108px;
     line-height: 18px;
+    color: #706f6f;
 }
 .clients__about:after{
     content: '';

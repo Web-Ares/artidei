@@ -39,6 +39,11 @@ $( function(){
     $('.portfolio__menu').each(function () {
         tabs($(this));
     });
+
+    $('.portfolio-wrap__img').each(function () {
+        bgHeight($(this));
+    });
+
     if($('#map').length){
         ymaps.ready(function () {
             var myMap = new ymaps.Map('map', {
@@ -68,6 +73,34 @@ $( function(){
     }
 
 } );
+
+var bgHeight = function (obj) {
+
+    //private properties
+    var _self = this,
+        _obj = obj,
+        imageSrc = _obj
+            .css('background-image')
+            .replace(/url\((['"])?(.*?)\1\)/gi, '$2')
+            .split(',')[0],
+        image = new Image();
+
+    //private methods
+    var _addEvents = function () {
+            image.src = imageSrc;
+            var height = image.height;
+            _obj.css('height',height)
+        },
+        _init = function () {
+            _addEvents();
+        };
+
+    //public properties
+
+    //public methods
+
+    _init();
+};
 
 var tabs = function (obj) {
 
