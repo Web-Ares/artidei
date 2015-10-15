@@ -1217,17 +1217,28 @@
     height: 912px;
     width: 976px;
     margin: 0 auto 80px;
-    padding-top: 71px;
+    padding-top: 120px;
     background-position: 100% 100%;
     background-repeat: no-repeat;
 }
 .portfolio-head h2{
-    margin-bottom: 17px;
     font: normal 30px/38px 'Myriad Pro Light', serif;
     color: #363636;
 }
 .portfolio-head a{
-
+    display: block;
+    margin-bottom: 35px;
+    font-size: 18px;
+    color: #0387be;
+    text-decoration: underline;
+    transition: opacity .3s ease;
+    -webkit-transition: opacity .3s ease;
+}
+.portfolio-head a:hover{
+    opacity: .7;
+}
+.portfolio-head p{
+    width: 350px;
 }
 .portfolio-wrap{
     margin-bottom: 50px;

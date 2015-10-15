@@ -79,17 +79,25 @@ var bgHeight = function (obj) {
     //private properties
     var _self = this,
         _obj = obj,
-        imageSrc = _obj
+        _window = $( window ),
+        _imageSrc = _obj
             .css('background-image')
             .replace(/url\((['"])?(.*?)\1\)/gi, '$2')
             .split(',')[0],
-        image = new Image();
+        _image = new Image();
 
     //private methods
     var _addEvents = function () {
-            image.src = imageSrc;
-            var height = image.height;
-            _obj.css('height',height)
+            _window.on({
+                load: function() {
+                    _image.src = _imageSrc;
+
+                    setTimeout(function () {
+                        var _height = _image.height;
+                        _obj.css('height', _height)
+                    }, 50);
+                }
+            });
         },
         _init = function () {
             _addEvents();
