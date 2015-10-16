@@ -326,6 +326,7 @@
     text-align: left;
 }
 .logo .name p{
+    color: #767676;
     line-height: 13px;
 }
 .logo .name strong{
@@ -935,7 +936,8 @@
     vertical-align: top;
     color: #706f6f;
     font-size: 16px;
-    padding-top: 39px;
+    line-height: 21px;
+    padding-top: 37px;
 }
 .contacts__social{
     position: absolute;
@@ -1180,16 +1182,17 @@
 .portfolio-swiper{
     position: relative;
     overflow: hidden;
+    margin: 0 -25.5px;
 }
 .portfolio-swiper .swiper-wrapper{
     margin-bottom: 37px;
 }
 .portfolio-swiper .swiper-slide{
-    text-align: justify;
+    text-align: center;
 }
 .portfolio-swiper .swiper-slide li{
     display: inline-block;
-    margin: 0 11px 30px;
+    margin: 0 20px 30px;
 }
 .portfolio-swiper .swiper-slide li > div{
     display: table-cell;
@@ -1216,20 +1219,21 @@
 
 /* ----------- portfolio-head --------------- */
 .portfolio-head{
-    height: 912px;
+    height: 918px;
     width: 976px;
-    margin: 0 auto 80px;
-    padding-top: 120px;
+    margin: 0 auto 83px;
+    padding-top: 121px;
     background-position: 100% 100%;
     background-repeat: no-repeat;
 }
 .portfolio-head h2{
+    margin-bottom: 3px;
     font: normal 30px/38px 'Myriad Pro Light', serif;
     color: #363636;
 }
 .portfolio-head a{
     display: block;
-    margin-bottom: 35px;
+    margin-bottom: 45px;
     font-size: 18px;
     color: #0387be;
     text-decoration: underline;
@@ -1241,13 +1245,14 @@
 }
 .portfolio-head p{
     width: 350px;
+    line-height: 18px;
 }
 .portfolio-wrap{
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     text-align: center;
 }
 .portfolio-wrap__img{
-    margin-bottom: 92px;
+    margin-bottom: 81px;
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -1255,6 +1260,9 @@
     width: 645px;
     margin: 0 auto;
     line-height: 18px;
+}
+.btn-box{
+    margin: -10px 0 20px;
 }
 /* ----------- portfolio-head --------------- */
 

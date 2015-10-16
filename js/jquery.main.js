@@ -53,18 +53,12 @@ $( function(){
                     searchControlProvider: 'yandex#search'
                 }),
                 myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
-                    hintContent: 'Собственный значок метки',
-                    balloonContent: 'Это красивая метка'
+                    hintContent: ' ',
+                    balloonContent: 'РђР Рў-РёРґРµРё'
                 }, {
-                    // Опции.
-                    // Необходимо указать данный тип макета.
                     iconLayout: 'default#image',
-                    // Своё изображение иконки метки.
                     iconImageHref: 'img/myIcon.png',
-                    // Размеры метки.
                     iconImageSize: [113, 108],
-                    // Смещение левого верхнего угла иконки относительно
-                    // её "ножки" (точки привязки).
                     iconImageOffset: [-113, -108]
                 });
 
