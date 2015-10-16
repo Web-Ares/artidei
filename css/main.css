@@ -927,6 +927,8 @@
     font-size: 16px;
     margin-right: 82px;
     color: #706f6f;
+    margin-top: -5px;
+    line-height: 21px;
 }
 .contacts__header dl{
     display: inline-block;
