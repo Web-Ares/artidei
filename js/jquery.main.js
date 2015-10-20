@@ -29,6 +29,7 @@
             prevButton: '.portfolio-prev',
             paginationClickable: true,
             loop: true,
+            speed: 2000,
             autoplayDisableOnInteraction: false
         });
     });
@@ -116,8 +117,8 @@ var tabs = function (obj) {
     //private methods
     var _addEvents = function () {
             showPage = function(i){
-                _wrap.hide();
-                _wrap.eq(i).show();
+                _wrap.removeClass("show");
+                _wrap.eq(i).addClass("show");
                 _tab.removeClass("active");
                 _tab.eq(i).addClass("active");
             };
