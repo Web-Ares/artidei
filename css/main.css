@@ -1077,7 +1077,6 @@
 }
 .get-propouse form > p a{
     color: #706f6f;
-
 }
 .get-propouse__send{
     display: block;
@@ -1186,6 +1185,8 @@
     left: 0;
     top: 6px;
     visibility: hidden;
+    transition: visibility .15s ease;
+    -webkit-transition: visibility .15s ease;
 }
 .tab__item a{
     margin-right: 20px;
@@ -1196,39 +1197,41 @@
 }
 .tab__item.show{
     visibility: visible;
-    animation-duration: 0.35s;
+}
+.tab__item.show a{
+    animation-duration: .35s;
     animation-fill-mode: backwards;
     animation-name: productbrowser-items-slidein-animation;
 }
 .tab__item.show a:nth-child(1) {
-    animation-delay: 0.15s;
+    animation-delay: .15s;
 }
 .tab__item.show a:nth-child(2) {
-    animation-delay: 0.2s;
+    animation-delay: .2s;
 }
 .tab__item.show a:nth-child(3) {
-    animation-delay: 0.25s;
+    animation-delay: .25s;
 }
 .tab__item.show a:nth-child(4) {
-    animation-delay: 0.3s;
+    animation-delay: .3s;
 }
 .tab__item.show a:nth-child(5) {
-    animation-delay: 0.35s;
+    animation-delay: .35s;
 }
 .tab__item.show a:nth-child(6) {
-    animation-delay: 0.4s;
+    animation-delay: .4s;
 }
 .tab__item.show a:nth-child(7) {
-    animation-delay: 0.45s;
+    animation-delay: .45s;
 }
 .tab__item.show a:nth-child(8) {
-    animation-delay: 0.5s;
+    animation-delay: .5s;
 }
 .tab__item.show a:nth-child(9) {
-    animation-delay: 0.55s;
+    animation-delay: .55s;
 }
 .tab__item.show a:nth-child(10) {
-    animation-delay: 0.6s;
+    animation-delay: .6s;
 }
 @keyframes productbrowser-items-slidein-animation {
     0% {
