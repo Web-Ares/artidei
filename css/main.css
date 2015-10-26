@@ -277,6 +277,28 @@
 .btn-transparent:hover{
     box-shadow: 0 0 3px #999;
 }
+.btn-white{
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    width: 110px;
+    height: 36px;
+    margin-left: -55px;
+    padding-top: 5px;
+    border: 2px solid #fff;
+    font-size: 14px;
+    text-shadow: none;
+    transition: color .3s ease, background-color .3s ease;
+    -webkit-transition: color .3s ease, background-color .3s ease;
+}
+.btn-white:before,
+.btn-white:after{
+    display: none;
+}
+.btn-white:hover{
+    background-color: #fff;
+    color: #ffa714;
+}
 /* ---------------- /btn --------------- */
 
 /* -------- site__header-layout ------- */
@@ -922,12 +944,12 @@
     padding-left: 138px;
     padding-top: 3px;
     margin-right: 79px;
+    line-height: 14px;
 }
 .contacts__header{
     padding-top: 14px;
     position: relative;
     margin-bottom: 4px;
-
 }
 .contacts__header address{
     display: inline-block;
@@ -1009,6 +1031,7 @@
     vertical-align: top;
     font-size: 16px;
     margin-top: 8px;
+    color: #706f6f;
 }
 .get-propouse__check > div{
     display: inline-block;
@@ -1146,8 +1169,12 @@
     height: 32px;
     margin-right: 45px;
     padding: 5px 0 0;
+    color: #767676;
     cursor: pointer;
     z-index: 2;
+}
+.news__tab .active{
+    color: #706f6f;
 }
 .news__tab span{
     border-bottom: 1px dashed transparent;
@@ -1267,19 +1294,43 @@
     text-align: center;
 }
 .portfolio-swiper .swiper-slide li{
+    position: relative;
     display: inline-block;
     margin: 0 35px 30px;
     width: 280px;
+    font-size: 14px;
+    color: #000;
 }
-.portfolio-swiper .swiper-slide li > div{
+.portfolio-swiper .swiper-slide li > div:first-child{
     display: table-cell;
     width: 280px;
-    height: 290px;
+    height: 294px;
     vertical-align: middle;
     overflow: hidden;
     text-align: center;
 }
 .portfolio-swiper .swiper-slide li img{
+    width: 100%;
+}
+.portfolio-swiper .swiper-slide li .item-hover{
+    position: absolute;
+    top: 0;
+    left: -10px;
+    right: -10px;
+    bottom: 0;
+    padding-top: 85px;
+    background: url("../img/bg-hover.jpg") no-repeat 50% 50% #fff;
+    opacity: 0;
+    transition: opacity .3s ease;
+    -webkit-transition: opacity .3s ease;
+}
+.portfolio-swiper .swiper-slide li:hover .item-hover{
+    opacity: 1;
+}
+.portfolio-swiper .swiper-slide li h3{
+    margin-bottom: 6px;
+    font-size: 24px;
+    color: #fff;
 }
 .portfolio-next,
 .portfolio-prev{
@@ -1297,11 +1348,14 @@
 /* ----------- portfolio-head --------------- */
 .portfolio-head{
     height: 918px;
-    width: 976px;
     margin: 0 auto 83px;
     padding-top: 121px;
-    background-position: 100% 100%;
+    background-position: 50% 100%;
     background-repeat: no-repeat;
+}
+.portfolio-head-content{
+    width: 976px;
+    margin: 0 auto;
 }
 .portfolio-head h2{
     margin-bottom: 3px;
@@ -1323,6 +1377,7 @@
 .portfolio-head p{
     width: 350px;
     line-height: 18px;
+    color: #706f6f;
 }
 .portfolio-wrap{
     margin-bottom: 40px;
@@ -1337,6 +1392,7 @@
     width: 645px;
     margin: 0 auto;
     line-height: 18px;
+    color: #706f6f;
 }
 .btn-box{
     margin: -10px 0 20px;
